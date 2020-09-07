@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Home Page";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Alta</title>
+</head>
+<body>
+    <div class="row" >
+        <form method="post" action="/Home/Alta">
+            <div>
+                <h2>Fecha:</h2>
+                <input type="text" name="Fecha" />
+            </div>
+
+            <div>
+                <h2>Concepto:</h2>
+                <input type="text" name="Concepto" />
+            </div>
+
+            <div>
+                <h2>Monto:</h2>
+                <input type="text" name="Monto" />
+            </div>
+
+            <div>
+                <h2>Tipo:</h2>
+                <select name="Tipo" >
+                    <option value="Ingreso" name="Ingreso">Ingreso</option>
+                    <option value="Egreso" name="Egreso">Egreso</option>
+                </select>
+            </div>
+
+            <div style="margin-top: 20px">
+                <button class="btn btn-primary btn-lg" type="submit" value="Confirmar"> Confirmar </button>
+                <a href="/Home/Index" class="btn btn-danger btn-lg">Cancelar</a>          
+            </div>
+        </form>
+    </div>
+</body>
+</html>

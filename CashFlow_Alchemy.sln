@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow_Alchemy", "CashFlow_Alchemy\CashFlow_Alchemy.csproj", "{3474B57B-B01C-4B30-8CEF-BBD125FC6852}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Db_operaciones", "Db_operaciones\Db_operaciones.csproj", "{2F446B4F-E200-4774-88A3-351DA0C8790A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3474B57B-B01C-4B30-8CEF-BBD125FC6852}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3474B57B-B01C-4B30-8CEF-BBD125FC6852}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3474B57B-B01C-4B30-8CEF-BBD125FC6852}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3474B57B-B01C-4B30-8CEF-BBD125FC6852}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F446B4F-E200-4774-88A3-351DA0C8790A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F446B4F-E200-4774-88A3-351DA0C8790A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F446B4F-E200-4774-88A3-351DA0C8790A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F446B4F-E200-4774-88A3-351DA0C8790A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81F7A8F9-9E18-419C-B183-90E8BEFBA3A7}
+	EndGlobalSection
+EndGlobal

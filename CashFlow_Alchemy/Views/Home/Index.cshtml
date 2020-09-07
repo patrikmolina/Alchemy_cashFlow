@@ -1,0 +1,73 @@
+﻿@model CashFlow_Alchemy.Models.operaciones_montos
+@{
+    ViewBag.Title = "Home Page";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Registro</h1>
+        <a href="/Home/Alta" class="btn btn-primary btn-lg" >Agregar Registro</a>
+        <div style="padding-bottom: 20px">
+            <h3 class="col-md-4" style="padding-left: 0px"> Saldo Actualizado:</h3>
+            <p class="col-md-4" style="margin-top: 20px; background-color: blanchedalmond">   @Model.Total </p>
+        </div>
+    </div>
+
+    <table class="table row">
+        <tr>
+            <th class="col-md-3">
+                <h2>Fecha</h2>
+            </th>
+            <th class="col-md-3">
+                <h2>Concepto</h2>
+            </th>
+            <th class="col-md-3">
+                <h2>Monto</h2>
+            </th>
+            <th class="col-md-3">
+                <h2>Tipo</h2>
+            </th>
+            
+        </tr>
+
+        @foreach (var Operaciones in Model.Lista_operaciones)
+        {
+         <tr>
+        <td>
+            @Operaciones.Fecha
+        </td>
+        <td>
+            @Operaciones.Concepto
+        </td>
+        <td>
+            @Operaciones.Monto
+        </td>
+        <td>
+            @Operaciones.Tipo
+        </td>
+
+        <td hidden>
+            @Operaciones.Id
+        </td>
+
+        <td>
+            <a href="/Home/Baja?Id=@Operaciones.Id">Borrar</a>
+        </td>
+        <td>
+            <a href="/Home/Modificacion?Id=@Operaciones.Id">Modificar</a>
+        </td>
+    </tr>
+        }
+
+    </table>
+   
+</body>
+</html>
